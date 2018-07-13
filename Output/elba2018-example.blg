@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: elba2018-example.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: Bibliography_SA.bib
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in Bandgap
+
+Done.
+You've used 6 entries,
+            4039 wiz_defined-function locations,
+            857 strings with 8253 characters,
+and the built_in function-call counts, 3717 in all, are:
+= -- 337
+> -- 42
+< -- 28
++ -- 26
+- -- 6
+* -- 179
+:= -- 655
+add.period$ -- 12
+call.type$ -- 6
+change.case$ -- 6
+chr.to.int$ -- 54
+cite$ -- 7
+duplicate$ -- 283
+empty$ -- 273
+format.name$ -- 6
+if$ -- 816
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 46
+newline$ -- 45
+num.names$ -- 6
+pop$ -- 75
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 295
+stack$ -- 0
+substring$ -- 144
+swap$ -- 232
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 6
+warning$ -- 1
+while$ -- 13
+width$ -- 7
+write$ -- 87
+(There was 1 warning)

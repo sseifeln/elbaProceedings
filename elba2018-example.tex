@@ -1,0 +1,138 @@
+\documentclass[5p,twocolumn,times,number]{elsarticle}
+
+\usepackage{caption}
+%\captionsetup[figure]{font=scriptsize}
+\captionsetup[figure]{font=footnotesize}
+
+\usepackage{bbding}
+\usepackage{pifont}
+\usepackage{graphicx}
+\usepackage{amsmath}  
+\usepackage{subfig}
+%\usepackage{cite}
+\usepackage{amsmath}
+\usepackage{cleveref}
+\usepackage{textcomp}
+\usepackage{tabularx}
+\usepackage{booktabs} 
+\usepackage{multirow}
+%\usepackage{gensymb}
+\usepackage{hepunits} 
+%%
+%% This simulates the banner introduced in NIMA after post-processing.
+\def\pmbanner{{\hrule height 1 pt}\vskip35pt{NIMA POST-PROCESS BANNER TO BE REMOVED AFTER FINAL ACCEPTANCE}\vskip35pt{\hrule height 4pt}\vskip20pt}
+%% End of definition. Please insert the command \pmbanner before your contibution's title
+%%
+%% \title{\pmbanner Title of the contribution}
+%%
+% Joel wrote this (thanks!!)
+
+\addunit{\Gray}{Gy}
+\DeclareMathOperator\erf{erf}
+\DeclareRobustCommand{\microns}{\;\micro\metre\;}
+\DeclareRobustCommand{\microSecond}{\;\micro\second\;}
+\DeclareRobustCommand{\nanoSecond}{\;\nano\second\;}
+\DeclareRobustCommand{\cm}{\;\centi\metre\;}
+\DeclareRobustCommand{\mm}{\;\milli\metre\;}
+\DeclareRobustCommand{\nm}{\;\nano\metre\;}
+\DeclareRobustCommand{\kHz}{\;\kilo\hertz\;}
+\DeclareRobustCommand{\pT}{${{p}_{\mbox{\small{t}}}}$}
+\DeclareRobustCommand{\cmSquared}{\;\centi\metre\rpsquared\;}
+\DeclareRobustCommand{\cmSq}{\;\centi\metre\textsuperscript{2}\;}
+\DeclareRobustCommand{\mmSq}{\;\milli\metre\textsuperscript{2}\;}
+\DeclareRobustCommand{\MHz}{\;\mega\hertz\;}
+\DeclareRobustCommand{\deg}{\;${^\circ}$\Celsius\;}
+\DeclareRobustCommand{\kGy}{\;\kilo\Gray\;}
+\DeclareRobustCommand{\kGyH}{\;\kilo\Gray\per\hour\;}
+\DeclareRobustCommand{\mV}{\;\milli\volt\;}
+\DeclareRobustCommand{\mA}{\;\milli\ampere\;}
+\DeclareRobustCommand{\MVcm}{\;\mega\volt\per\centi\metre\;}
+\DeclareRobustCommand{\NotMax}{N_{\mbox{\tiny{OT,max}}}}
+\DeclareRobustCommand{\Not}{N_{\mbox{\tiny{OT}}}}
+\DeclareRobustCommand{\Rot}{r_{\mbox{\tiny{OT}}}}
+\DeclareRobustCommand{\Fot}{f_{\mbox{\tiny{OT}}}}
+\DeclareRobustCommand{\dNot}{\dot N_{\mbox{\tiny{OT}}}}
+\DeclareRobustCommand{\NitMax}{N_{\mbox{\tiny{SiH}}}}
+\DeclareRobustCommand{\Nit}{N_{\mbox{\tiny{IT}}}}
+\DeclareRobustCommand{\NitInit}{N_{\mbox{\tiny{IT,0}}}}
+\DeclareRobustCommand{\NotInit}{N_{\mbox{\tiny{OT,0}}}}
+\DeclareRobustCommand{\interface}{Si-SiO$_{2}$\;}
+\DeclareRobustCommand{\SiO}{SiO$_{2}$\;}
+\DeclareRobustCommand{\Co}{$^{60}$Co }
+\DeclareRobustCommand{\eV}{\;\electronvolt\;}
+\DeclareRobustCommand{\keV}{\;\kilo\electronvolt\;}
+\DeclareRobustCommand{\MeV}{\;\mega\electronvolt\;}
+\DeclareRobustCommand{\GeV}{\;\giga\electronvolt\;}
+\DeclareRobustCommand{\TeV}{\;\tera\electronvolt\;}
+\DeclareRobustCommand{\Vthr}{V_{\mbox{\tiny{thr}}}}
+\DeclareRobustCommand{\Nthr}{N_{\mbox{\tiny{thr}}}}
+\DeclareRobustCommand{\Neff}{N_{\mbox{\tiny{eff}}}}
+\DeclareRobustCommand{\Ileak}{I_{\mbox{\tiny{leak}}}}
+\DeclareRobustCommand{\IpreIrrad}{I_{\mbox{\tiny{pre-irrad}}}}
+\DeclareRobustCommand{\Tthr}{t_{\mbox{\tiny{critical}}}}
+\DeclareRobustCommand{\Dcritical}{d_{\mbox{\tiny{critical}}}}
+\DeclareRobustCommand{\Nmax}{N_{\mbox{\tiny{max}}}}
+\DeclareRobustCommand{\fb}{\;\femto\barn$^{-1}$\;}
+\DeclareRobustCommand{\Vdd}{V${_{\mbox{\small{DDD}}}}$}
+\DeclareRobustCommand{\Vda}{V${_{\mbox{\small{DDA}}}}$}
+
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.15}
+\renewcommand{\floatpagefraction}{0.99}
+\renewcommand{\textfraction}{0.1}
+\setlength{\floatsep}{5pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{5pt plus 2pt minus 2pt}
+\setlength{\intextsep}{5pt plus 2pt minus 2pt}
+
+%Copied from standard CMS
+\newcommand{\pt}{\ensuremath{p_{\mathrm{T}}}\xspace}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Note: \pmbanner before the actual title
+\title{\pmbanner Recent developments in the CBC3, a CMS micro-strip readout ASIC for track-trigger modules at the HL-LHC}
+%%
+
+\author[add1,add2]{F.~Author1\corref{cor}}
+%\ead{f.author1@earth.org}
+\author[add3]{J.~Author2}
+\author[add6]{M.~Author3}
+
+%\cortext[cor]{Corresponding author}
+
+\address[add1]{Institute 1, City, Country}
+\address[add2]{Institute 2, City, Country}
+\address[add3]{Institute 3, City, Country}
+\address[add6]{Institute 6, City, Country}
+
+\begin{abstract}
+The CMS Binary Chip (CBC) is the front-end readout ASIC planned for the outermost layers of the CMS Phase 2 silicon outer tracker. Results from an extensive irradiation campaign carried out on the CBC3, the first version of the ASIC to include the full trigger logic circuitry, have demonstrated that the chip is capable of withstanding the levels of radiation expected at the HL-LHC, with only a slight (${<1\%}$) increase in power consumption. Results from the irradiation campaign, and details of the novel damage model developed to describe the measurements and extrapolate to the final operating conditions, will be presented. Additionally results from the Fermilab test beam facility will be shown that demonstrate the full functionality of the stub-finding logic.
+% * <dr.joel.goldstein@gmail.com> 2018-07-03T11:50:38.817Z:
+% 
+% Removed the number "three" to avoid ambiguity with layer vs double layer
+% 
+% ^.
+\end{abstract}
+
+\begin{keyword}
+Tracking detectors \sep Radiation Effects \sep Total Ionizing Dose  \sep ASICs 
+
+\PACS 29.40.Cs \sep 29.40.Gx    
+\end{keyword}
+\end{frontmatter}
+
+\input{Introduction}
+\input{ExperimentalProcedure.tex}
+\input{Results}
+\input{RadModel}
+\input{TestBeam}
+\input{Conclusions}
+%\section*{Acknowledgments}
+\input{References}
+\end{document}
